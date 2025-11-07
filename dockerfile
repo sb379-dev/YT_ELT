@@ -4,6 +4,7 @@ ARG PYTHON_VERSION=3.10
 FROM apache/airflow:${AIRFLOW_VERSION}-python${PYTHON_VERSION}
 
 ENV AIRFLOW_HOME=/opt/airflow
+#ENV AIRFLOW__WEBSERVER__EXPOSE_CONFIG=True
 
 COPY requirements.txt /
 
